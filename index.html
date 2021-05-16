@@ -18,9 +18,54 @@
     <link rel="stylesheet" href="static/css/bootstrap.min.css" />
     <link rel="stylesheet" href="static/css/style.css" /> <!--ОБЕЗАТЕЛЬНО мой css должен быть всегда ниже, чем остальные-->
   </head>
-  <body>
-    <header class="bg-primary">
-      <div class="container-sm"><h1>Заголовок</h1></div>
+  <body>                                                <!---->
+    <header class="bg-primary"> <!--BootStrap изменили цвет через CSS на жёлтый-->
+      <div class="container-sm position-relative h-100"> <!--(BootStrap) container-sm (динамический,отступ меняет в зависимости от размера экрана) помогает центровать и делать по краям границы, (h-100) высота 100%-->
+                 <!--навигационное меню-->
+      <nav class="navbar navbar-expand-md navbar-light pt-4">   <!--(pt-4) padding-top отступ с верху-->
+        <div class="container-fluid">                           <!--скопировано с BootStrap-->    
+          <a class="navbar-brand" href="#">MOVEE</a>            <!--скопировано с BootStrap-->    
+          <button                                                                                   
+            class="navbar-toggler"                                                                             
+            type="button"                                       
+            data-bs-toggle="collapse"                           
+            data-bs-target="#navbarNav"                         
+            aria-controls="navbarNav"                           
+            aria-expanded="false"                              
+            aria-label="Toggle navigation"                      
+             >
+            <span class="navbar-toggler-icon"></span>           <!--скопировано с BootStrap-->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav"> <!--скопировано с BootStrap-->
+            <ul class="navbar-nav m-auto"> <!--(margen-avto) отцентровать по центру-->
+              <li class="nav-item">                             <!--скопировано с BootStrap-->
+                <a class="nav-link" href="#">Цена</a>           <!--скопировано с BootStrap-->
+              </li>
+              <li class="nav-item">                             <!--скопировано с BootStrap-->
+                <a class="nav-link" href="#">Автопарк</a>       <!--скопировано с BootStrap-->
+              </li>
+              <li class="nav-item">                             <!--скопировано с BootStrap-->
+                <a class="nav-link" href="#">Отзывы</a>         <!--скопировано с BootStrap-->
+              </li>
+              <li class="nav-item">                             <!--скопировано с BootStrap-->
+                <a class="nav-link" href="#">Контакты</a>       <!--скопировано с BootStrap-->
+              </li>
+            </ul>
+          </div>
+          <span class="navbar-text d-none d-lg-block">  <!--(navbar-text -это класс для CSS) (d-none невидимый при маленьким экране)(d-lg-block видимый при большом экране)-->
+            <a href="tel:88000801213"><b>8(800)-080-12-13</b></a>
+          </span>
+        </div>
+      </nav>
+      <!--/Навигационное меню закончилась-->
+
+      <!-- Заголовок -->  <!---->
+      <div>
+        <h1 class="display-2 mt-lg-5 text-center text-lg-start">  <!--(display-2 -это класс для CSS)(mt-lg-5) "mt"-margen top, "lg" -для большого экрана "5" -будет отступ 5 -->
+          Квартирные<br />переезды <br /><span>по Москве и области</span>
+        </h1>
+      </div>
+      <!-- /Заголовок -->
     </header>
     
     <script src="static/js/bootstrap.min.js"></script>
