@@ -1,0 +1,156 @@
+.bg-primary {
+  background-color: #fed100 !important;
+}
+
+.navbar-brand {
+  font-weight: bold; /*Устанавливает насыщенность шрифта(толщина жирного текста и размер)(bold-жирный текст)*/
+}
+.navbar-expand-md .navbar-nav .nav-link {
+  font-size: large;       /*изменяет размер текста (large-большой) (дочерний блок)*/
+  padding-right: 1.5rem;  /*с право(right) убирает отступ внутри блока или добавляет*/
+  padding-left: 1.5rem;   /*с лево(left) убирает отступ внутри блока или добавляет*/
+  font-weight: bold; /*Устанавливает насыщенность шрифта(толщина жирного текста и размер)(bold-жирный текст)*/
+}
+.navbar-text {
+  font-size: large;     /*изменяет размер текста (large-большой) (дочерний блок)*/
+}
+.nav-link:hover {       /*hover-изменения текста при наведения мышки (дочерний блок)*/
+  text-decoration: underline; /*подчёркивает текс при наведение (дочерний блок)(BootStrap-меняет подчеркивание на жирноватый текст)*/
+}
+
+.display-2 {
+  font-weight: 700; /*Устанавливает насыщенность шрифта(толщина жирного текста и размер)*/
+  line-height: 1;   /*между строчная высота(между каждой строчкой)*/
+}
+.display-2 span {
+  font-size: 0.4em;  /*изменяет размер текста*/
+  font-weight: 500; /*Устанавливает насыщенность шрифта(толщина жирного текста и размер)*/
+}
+.men {
+  z-index: 100; /*чем выше z-index,тем приоритетней будет картинка относительно других*/
+}
+.gazel {
+  z-index: 50; /*чем выше z-index,тем приоритетней будет картинка относительно других*/
+}
+
+.block-btn {
+  width: 250px; /*изменяет ширину блока(дочерний блок)*/
+  z-index: 150; /*чем выше z-index,тем приоритетней будет картинка относительно других*/
+}
+.btn-secondary {
+  background-color: #ff352b; /*цвет кнопки*/
+  border-color: #ff352b;     /*цвет бордюра кнопки*/
+}
+.btn-secondary:hover {         /*изменения при наведение курсора*/
+  background-color: #ce150b; /*цвет кнопки*/
+  border-color: #ce150b;     /*цвет бордюра кнопки*/
+}
+.btn-check:focus + .btn-secondary, /**/
+.btn-secondary:focus {
+  background-color: #ce150b; /*цвет кнопки*/
+  border-color: #ce150b;     /*цвет бордюра кнопки*/
+  box-shadow: 0 0 0 0.25rem rgb(130 138 145 / 50%); /* позволяет добавлять элементу одну или несколько теней*/
+}
+.block-ico {
+  width: 410px; /*изменяет ширину блока(дочерний блок)*/
+}
+.block-ico > div > img {
+  width: 30px; /*изменяет ширину блока(дочерний блок)*/
+}
+.block-ico .img-1 {
+  width: 40px; /*изменяет ширину блока(дочерний блок)*/
+}
+.phone {
+  bottom: 50px; /*отступ с низу верх (настраивается внутри блока) */
+  right: 200px; /*отступ с право на лево (настраивается внутри блока) */
+  width: 100px; /*изменяет ширину блока(дочерний блок)*/
+  height: 100px; /*изменяет высоту блока(дочерний блок или родительский блок)*/
+}
+.bg-phone {
+  width: 75%;  /*изменяет ширину блока(дочерний блок)*/
+  height: 75%; /*изменяет высоту блока(дочерний блок или родительский блок)*/
+  background: #3d9be9;
+  top: 12px;  /*отступ с верху в низ (настраивается внутри блока) */
+  left: 12px; /*отступ с лево на право (настраивается внутри блока) */
+}
+.bg-phone-1 {
+  background: rgba(61, 155, 233, 0.3);
+}
+.phone-vector {
+  width: 40%;  /*изменяет ширину блока(дочерний блок)*/
+  top: 30px;  /*отступ с верху в низ (настраивается внутри блока) */
+  left: 30px; /*отступ с лево на право (настраивается внутри блока) */
+}
+
+.border-primary {
+  border-color: #fed100 !important;
+}
+
+.btn-primary {
+  color: black;
+  background-color: #fed100;
+  border-color: #fed100; /*цвет бордюра*/
+}
+.btn-primary:hover {
+  color: #fff;
+  background-color: #fed100;
+  border-color: #fed100; /*цвет бордюра*/
+}
+
+.btn-outline-primary {
+  color: black;
+  border-color: #ebebeb; /*цвет бордюра*/
+}
+.btn-check:active + .btn-outline-primary,
+.btn-check:checked + .btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show,
+.btn-outline-primary:active {
+  color: black;
+  background-color: #fff;
+  border-color: #fed100; /*цвет бордюра*/
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #fed100;
+  border-color: #fed100; /*цвет бордюра*/
+}
+.btn-line {
+  display: block;
+  width: 150px;  /*изменяет ширину блока(дочерний блок)*/
+}
+.star {
+  display: block;
+  width: 80px;  /*изменяет ширину блока(дочерний блок)*/
+  height: 18px; /*изменяет высоту блока(дочерний блок или родительский блок)*/
+  background: url('../images/ico/star.png');
+}
+.form-check-input:checked {
+  background-color: #ff352b;
+  border-color: black; /*цвет бордюра*/
+}
+
+@media (max-width: 992px) { /*(max-width: 992px) -это максимальный монитор мобильника*/
+  header {
+    height: 100vh; /*изменяет высоту блока(дочерний блок или родительский блок)*/
+  }
+  .men {
+    bottom: 100px !important;  /*отступ с низу верх (настраивается внутри блока) */
+  }
+  .men img {
+    height: 420px; /*изменяет высоту блока(дочерний блок или родительский блок)*/
+  }
+  .block-btn {
+    width: 94%;  /*изменяет ширину блока(дочерний блок)*/
+    bottom: 70px !important;  /*отступ с низу верх (настраивается внутри блока) */
+    z-index: 150;
+  }
+  .btn-line {
+    width: 100px; /*изменяет ширину блока(дочерний блок)*/
+  }
+}
+@media (min-width: 992px) { /*(min-width: 992px) -это минимальный монитор мобильника*/
+  header {
+    height: 640px; /*изменяет высоту блока(дочерний блок или родительский блок)*/
+  }
+}
