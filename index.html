@@ -115,106 +115,112 @@
             d-none d-lg-flex
           "
         > <!--(d-none d-lg-block) (d-none невидимый при маленьким экране)(d-lg-block видимый при большом экране)-->
+          <!--(d-flex -это display-flex все внутренние блоки(3шт)будут распределяться равномерно по всему родительскому блок)-->
+          <!--(bottom-0 -отступ с низу)(mb-5 -margin-bottom --отступ с низу c наружи блока)-->
           <div>
             <img
               src="static/images/ico/truck-1.png"
               class="float-start m-1 img-1"
               alt=""
-            />
-            <p class="lh-1"><small>Более 800 переездов</small></p>
-          </div>
+            /> <!--(float-start -float-left убрать картинку в лево от текста)(m-1 margin-1 отступ со всех краёв)-->
+               <!--(img-1 -это класс кнопки для CSS)-->
+            <p class="lh-1"><small>Более 800 переездов</small></p> <!--"lh-1" расстояние между строчками(BootStrap)-->
+          </div> <!--("small" -это уменьшения шрифта "маленький")-->
           <div>
             <img
               src="static/images/ico/triggerTwo-1.png"
               class="float-start m-1"
               alt=""
-            />
-            <p class="lh-1"><small>Бережная упаковка</small></p>
-          </div>
-          <div class="flex-fill">
+            /> <!--(float-start -float-left убрать картинку в лево от текста)(m-1 margin-1 отступ со всех краёв)-->
+            <p class="lh-1"><small>Бережная упаковка</small></p> <!--"lh-1" расстояние между строчками(BootStrap)-->
+          </div> <!--("small" -это уменьшения шрифта "маленький")-->
+          <div class="flex-fill"> <!--(flex-fill -это BootStrap класс - ячейка, увеличения ширины на всё оставшееся место)-->
             <img
               src="static/images/ico/money-1.png"
               class="float-start m-1"
               alt=""
-            />
-            <p class="lh-1">
-              <small>Фиксированная <br />цена</small>
+            /> <!--(float-start -float-left убрать картинку в лево от текста)(m-1 margin-1 отступ со всех краёв)-->
+            <p class="lh-1"> <!--"lh-1" расстояние между строчками(BootStrap)-->
+              <small>Фиксированная <br />цена</small> <!--("small" -это уменьшения шрифта "маленький")-->
             </p>
           </div>
         </div>
         <!-- Кнопка телефон -->
-        <div class="position-absolute d-none d-lg-block phone"> <!--(d-none d-lg-block) (d-none невидимый при маленьким экране)(d-lg-block видимый при большом экране)-->
-          <div class="position-relative w-100 h-100">
-            <div class="position-absolute rounded-circle bg-phone"></div>
+        <div class="position-absolute d-none d-lg-block phone"> <!--(d-none d-lg-block) (d-none невидимый при маленьким экране)(d-lg-block видимый при большом экране)(phone class -свой стиль CSS)-->
+          <div class="position-relative w-100 h-100"> <!--(w-100 -ширина)(h-100 -высота) от родительского блока-->
+            <div class="position-absolute rounded-circle bg-phone"></div> <!--(rounded-circle -это чтобы блок стал круглым)(bg-phone class) -это свой стиль CSS-->
             <div
               class="position-absolute w-100 h-100 rounded-circle bg-phone-1"
-            ></div>
+            ></div> <!--(w-100 -ширина)(h-100 -высота) от родительского блока(rounded-circle -это чтобы блок стал круглым)(bg-phone-1 class) -это свой стиль CSS-->
             <img
               src="static/svg/Vector.svg"
-              class="position-absolute phone-vector"
+              class="position-absolute phone-vector" 
               alt=""
-            />
+            /> <!--(phone-vector -это свой стиль CSS)-->
           </div>
         </div>
       </div>
     </header>
     <!-- Вторая секция -->
-    <section class="w-75 m-auto mt-5">
-      <h2 class="text-center">Как это происходит?</h2>
-      <div class="row row-cols-1 row-cols-sm-2 gy-5 mt-5">
-        <div class="col">
+    <!--(.row -это строка BootStrap) .row*3-->
+    <!--(.col -это ячейка BootStrap) .col*3-->
+
+    <section class="w-75 m-auto mt-5"> <!--(w-75 -это ширина 75%)(m-auto margin-auto сделать страницу по центру)(mt-5 сделать отступ с верху 5 пунктов)-->
+      <h2 class="text-center">Как это происходит?</h2> <!--("text-center"-сделать текст по центру)-->
+      <div class="row row-cols-1 row-cols-sm-2 gy-5 mt-5"> <!--(row-cols-1 -это одна колонка) по ширине мобильного экрана колонка будет одна BootStrap-->
+        <div class="col"> <!--(row-cols-sm-2) по ширине выше мобильного экрана колонки будет две(2) BootStrap--> <!--(gy-5 -расстояние по вертикале между колонками)-->
           <!-- Еще одна строка с двумя колонками -->
-          <div class="row">
-            <div class="col-2 display-5">01</div>
-            <div class="col-10">
-              <h3 class="fs-6">Оценка объема предстоящих работ</h3>
+          <div class="row"> <!--(row -строка BootStrap)-->
+            <div class="col-2 display-5">01</div> <!--(col-2 -ширина колонки в ячейки)12-2=10 осталось до(12 всего)родительского элемента-->
+            <div class="col-10"> <!--(col-10 -ширина колонки в ячейки)10-10=0 осталось до(12 всего) от родительского элемента-->
+              <h3 class="fs-6">Оценка объема предстоящих работ</h3> <!--(fs-6 -уменьшил шрифт) fs-6 самый маленький fs-1 -самый большой-->
               <p class="d-none d-lg-block"> <!--(d-none d-lg-block) (d-none невидимый при маленьким экране)(d-lg-block видимый при большом экране)-->
                 <small>
                   Стоимость переезда зависит от количества комнат, вещей и
                   мебели.
-                </small>
+                </small> <!--("small" -это уменьшения шрифта "маленький")-->
               </p>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="row">
-            <div class="col-2 display-5">02</div>
-            <div class="col-10">
-              <h3 class="fs-6">Упаковка вещей</h3>
+        <div class="col"> <!--(col -это ячейка)-->
+          <div class="row"> <!--(row -это строка)-->
+            <div class="col-2 display-5">02</div> <!--(col-2 -ширина колонки в ячейки)12-2=10 осталось до(12 всего)родительского элемента-->
+            <div class="col-10"> <!--(col-10 -ширина колонки в ячейки)10-10=0 осталось до(12 всего) от родительского элемента-->
+              <h3 class="fs-6">Упаковка вещей</h3> <!--(fs-6 -уменьшил шрифт) fs-6 самый маленький fs-1 -самый большой-->
               <p class="d-none d-lg-block"> <!--(d-none d-lg-block) (d-none невидимый при маленьким экране)(d-lg-block видимый при большом экране)-->
                 <small>
                   Упаковываем вещи в коробки, подписываем. Габаритное и
                   деликатное, упаковываем отдельно.
-                </small>
+                </small> <!--("small" -это уменьшения шрифта "маленький")-->
               </p>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="row">
-            <div class="col-2 display-5">03</div>
-            <div class="col-10">
-              <h3 class="fs-6">Погрузка и транспортировка вещей</h3>
+        <div class="col"> <!--(col -это ячейка)-->
+          <div class="row"> <!--(row -это строка)-->
+            <div class="col-2 display-5">03</div> <!--(col-2 -ширина колонки в ячейки)12-2=10 осталось до(12 всего)родительского элемента-->
+            <div class="col-10"> <!--(col-10 -ширина колонки в ячейки)10-10=0 осталось до(12 всего) от родительского элемента-->
+              <h3 class="fs-6">Погрузка и транспортировка вещей</h3> <!--(fs-6 -уменьшил шрифт) fs-6 самый маленький fs-1 -самый большой-->
               <p class="d-none d-lg-block"> <!--(d-none d-lg-block) (d-none невидимый при маленьким экране)(d-lg-block видимый при большом экране)-->
                 <small>
                   В нашем автопарке имеются машины, подходящие для мебели любых
                   габаритов.
-                </small>
+                </small> <!--("small" -это уменьшения шрифта "маленький")-->
               </p>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="row">
-            <div class="col-2 display-5">04</div>
-            <div class="col-10">
-              <h3 class="fs-6">Распаковка и расстановка мебели</h3>
+        <div class="col"> <!--(col -это ячейка)-->
+          <div class="row"> <!--(row -это строка)-->
+            <div class="col-2 display-5">04</div> <!--(col-2 -ширина колонки в ячейки)12-2=10 осталось до(12 всего)родительского элемента-->
+            <div class="col-10"> <!--(col-10 -ширина колонки в ячейки)10-10=0 осталось до(12 всего) от родительского элемента-->
+              <h3 class="fs-6">Распаковка и расстановка мебели</h3> <!--(fs-6 -уменьшил шрифт) fs-6 самый маленький fs-1 -самый большой-->
               <p class="d-none d-lg-block"> <!--(d-none d-lg-block) (d-none невидимый при маленьким экране)(d-lg-block видимый при большом экране)-->
                 <small>
                   Опытные грузчики быстро расставят мебель и уберут мусор от
                   распаковки.
-                </small>
+                </small> <!--("small" -это уменьшения шрифта "маленький")-->
               </p>
             </div>
           </div>
@@ -222,33 +228,33 @@
       </div>
     </section>
     <!-- Секция 3 -->
-    <section class="mt-5 w-75 m-auto">
-      <h2 class="text-center">Цены</h2>
+    <section class="mt-5 w-75 m-auto"> <!--(mt-5 margin-top сделать отступ с верху 5 пунктов)(w-75 -ширина 75%)(m-auto -margin-auto)-->
+      <h2 class="text-center">Цены</h2> <!--(text-center -центровать текст по центру)(fs-5 -уменьшил шрифт) fs-6 самый маленький fs-1 -самый большой-->
       <p class="fs-5 text-center d-none d-lg-block"> <!--(d-none d-lg-block) (d-none невидимый при маленьким экране)(d-lg-block видимый при большом экране)-->
         <strong>Фиксированная стоимость на переезд под ключ</strong>
       </p>
-      <div class="row row-cols-1 row-cols-sm-3 g-4 mt-5">
+      <div class="row row-cols-1 row-cols-sm-3 g-4 mt-5"> <!--(row -строка)(row-cols-1 -на мобильнике одну(1)строку)(row-cols-sm-3 -на большом экране в три(3)строки)(g-4 -отступ между колонками со всех сторон)-->
         <div class="col d-none d-lg-block"> <!--(d-none d-lg-block) (d-none невидимый при маленьким экране)(d-lg-block видимый при большом экране)-->
-          <div class="border border-light">
-            <h3 class="fs-5 text-center my-5">1-комнатная кв-ра</h3>
+          <div class="border border-light"> <!--(border-light -рамка с левой стороны)-->
+            <h3 class="fs-5 text-center my-5">1-комнатная кв-ра</h3> <!--(fs-5 -уменьшил шрифт) fs-6 самый маленький fs-1 -самый большой(my-5 margin-y отступ по вертикали 5)-->
             <p class="text-center">1 фургон</p>
             <p class="text-center">2 грузчика</p>
             <p class="text-center">Переезд за 4 часа</p>
-            <p class="text-center fs-3 mt-5"><b>8 490₽</b></p>
+            <p class="text-center fs-3 mt-5"><b>8 490₽</b></p> <!--(fs-3 -уменьшил шрифт)-->
             <p class="text-center my-5">
               <a href="#" class="btn btn-primary rounded-0 px-5 py-1"
-                >Заказать</a
-              >
+                >Заказать</a 
+              > <!--(btn -это кнопка)(btn-primary -кнопка цветом основой)(rounded-0 -незакруглённые углы у кнопки)(px-5 pading-x 5 горизонталь внутри блока py-1) (py paking-y по вертикали с наружи блока)-->
             </p>
           </div>
         </div>
         <div class="col">
           <div class="border border-primary">
-            <h3 class="fs-5 text-center my-5">2-комнатная кв-ра</h3>
+            <h3 class="fs-5 text-center my-5">2-комнатная кв-ра</h3> <!--(fs-5 -уменьшил шрифт)-->
             <p class="text-center">1 газель - 3 метра</p>
             <p class="text-center">2 грузчика</p>
             <p class="text-center">Переезд за 4 часа</p>
-            <p class="text-center fs-3 mt-5"><b>10 990₽</b></p>
+            <p class="text-center fs-3 mt-5"><b>10 990₽</b></p> <!--(fs-3 -уменьшил шрифт)-->
             <p class="text-center my-5">
               <a href="#" class="btn btn-primary rounded-0 px-5 py-1"
                 >Заказать</a
@@ -258,11 +264,11 @@
         </div>
         <div class="col d-none d-lg-block"> <!--(d-none d-lg-block) (d-none невидимый при маленьким экране)(d-lg-block видимый при большом экране)-->
           <div class="border border-light">
-            <h3 class="fs-5 text-center my-5">3-комнатная кв-ра</h3>
+            <h3 class="fs-5 text-center my-5">3-комнатная кв-ра</h3> <!--(fs-5 -уменьшил шрифт)-->
             <p class="text-center">1 газель - 4 метра</p>
             <p class="text-center">2 грузчика</p>
             <p class="text-center">Переезд за 6 часов</p>
-            <p class="text-center fs-3 mt-5"><b>16 490₽</b></p>
+            <p class="text-center fs-3 mt-5"><b>16 490₽</b></p> <!--(fs-3 -уменьшил шрифт)-->
             <p class="text-center my-5">
               <a href="#" class="btn btn-primary rounded-0 px-5 py-1"
                 >Заказать</a
@@ -309,23 +315,23 @@
         <div class="row">
           <!-- Первая колонка -->
           <div class="col-4 d-none d-lg-block"> <!--(d-none d-lg-block) (d-none невидимый при маленьким экране)(d-lg-block видимый при большом экране)-->
-            <p class="fs-5 ms-5 mt-5"><b>Газель 3 метра</b></p>
+            <p class="fs-5 ms-5 mt-5"><b>Газель 3 метра</b></p> <!--(fs-5 -уменьшил шрифт)-->
             <ul class="list-unstyled ms-5">
               <li class="py-2">
                 <img src="static/svg/arr.svg" alt="" />
-                <small>Ширина 2 м</small>
+                <small>Ширина 2 м</small> <!--("small" -это уменьшения шрифта "маленький")-->
               </li>
               <li class="py-2">
                 <img src="static/svg/arr.svg" alt="" />
-                <small>Высота 2 м</small>
+                <small>Высота 2 м</small> <!--("small" -это уменьшения шрифта "маленький")-->
               </li>
               <li class="py-2">
                 <img src="static/svg/arr.svg" alt="" />
-                <small>Объем 16 м³</small>
+                <small>Объем 16 м³</small> <!--("small" -это уменьшения шрифта "маленький")-->
               </li>
               <li class="py-2">
                 <img src="static/svg/arr.svg" alt="" />
-                <small>Грузоподъемность 1,5 т</small>
+                <small>Грузоподъемность 1,5 т</small> <!--("small" -это уменьшения шрифта "маленький")-->
               </li>
             </ul>
             <p class="my-5 ms-5">
@@ -340,7 +346,7 @@
           </div>
         </div>
         <p class="d-lg-none d-block text-center">
-          <small>Газель 3 метра / 1,5 тонны</small>
+          <small>Газель 3 метра / 1,5 тонны</small> <!--("small" -это уменьшения шрифта "маленький")-->
         </p>
       </div>
     </section>
@@ -349,9 +355,9 @@
       <h2 class="text-center">Отзывы</h2>
       <div class="row w-75 m-auto mt-3">
         <div class="col d-none d-lg-block"> <!--(d-none d-lg-block) (d-none невидимый при маленьким экране)(d-lg-block видимый при большом экране)-->
-          <p class="fs-5 mt-5"><b>Ирина</b></p>
+          <p class="fs-5 mt-5"><b>Ирина</b></p> <!--(fs-5 -уменьшил шрифт)-->
           <p class="d-flex">
-            <small>24.03.2019</small>
+            <small>24.03.2019</small> <!--("small" -это уменьшения шрифта "маленький")-->
             <span class="star ms-3"></span>
           </p>
           <p>
@@ -363,9 +369,9 @@
           <p><a href="#" class="link-dark">Читать полностью</a></p>
         </div>
         <div class="col">
-          <p class="fs-5 mt-5"><b>Светлана Васильевна</b></p>
+          <p class="fs-5 mt-5"><b>Светлана Васильевна</b></p> <!--(fs-5 -уменьшил шрифт)-->
           <p class="d-flex">
-            <small>24.03.2019</small>
+            <small>24.03.2019</small> <!--("small" -это уменьшения шрифта "маленький")-->
             <span class="star ms-3"></span>
           </p>
           <p>
@@ -377,9 +383,9 @@
           <p><a href="#" class="link-dark">Читать полностью</a></p>
         </div>
         <div class="col d-none d-lg-block"> <!--(d-none d-lg-block) (d-none невидимый при маленьким экране)(d-lg-block видимый при большом экране)-->
-          <p class="fs-5 mt-5"><b>Ольга Петрова</b></p>
+          <p class="fs-5 mt-5"><b>Ольга Петрова</b></p> <!--(fs-5 -уменьшил шрифт)-->
           <p class="d-flex">
-            <small>24.03.2019</small>
+            <small>24.03.2019</small> <!--("small" -это уменьшения шрифта "маленький")-->
             <span class="star ms-3"></span>
           </p>
           <p>
@@ -401,7 +407,7 @@
     <!-- Форма -->
     <section class="w-75 m-auto my-5">
       <h2>Закажи переезд прямо сейчас</h2>
-      <p><small>Мы перезвоним в течении 10 секунд</small></p>
+      <p><small>Мы перезвоним в течении 10 секунд</small></p> <!--("small" -это уменьшения шрифта "маленький")-->
       <div class="row g-3 row-cols-1 row-cols-sm-3">
         <div class="col">
           <input
@@ -431,7 +437,7 @@
               id="flexCheckDefault"
             />
             <label class="form-check-label" for="flexCheckDefault">
-              <small>Даю согласие на обработку данных</small>
+              <small>Даю согласие на обработку данных</small> <!--("small" -это уменьшения шрифта "маленький")-->
             </label>
           </div>
         </div>
@@ -451,12 +457,12 @@
       <div class="container-sm">
         <div class="row row-cols-1 row-cols-sm-4">
           <div class="col py-2 py-sm-5">
-            <p class="fs-4 text-center"><b>MOVEE</b></p>
+            <p class="fs-4 text-center"><b>MOVEE</b></p> <!--(fs-4 -уменьшил шрифт)-->
             <p class="text-center">
-              <small>Политика конфиденциальнности</small>
+              <small>Политика конфиденциальнности</small> <!--("small" -это уменьшения шрифта "маленький")-->
             </p>
             <p class="text-center">
-              <small>Соглашение на обработку персональных данных</small>
+              <small>Соглашение на обработку персональных данных</small> <!--("small" -это уменьшения шрифта "маленький")-->
             </p>
           </div>
           <div class="col py-2 py-sm-5">

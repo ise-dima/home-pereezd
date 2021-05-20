@@ -1,5 +1,5 @@
 .bg-primary {
-  background-color: #fed100 !important;
+  background-color: #fed100 !important; /*цвет*/
 }
 
 .navbar-brand {
@@ -69,12 +69,12 @@
 .bg-phone {
   width: 75%;  /*изменяет ширину блока(дочерний блок)*/
   height: 75%; /*изменяет высоту блока(дочерний блок или родительский блок)*/
-  background: #3d9be9;
+  background: #3d9be9; /*цвет*/
   top: 12px;  /*отступ с верху в низ (настраивается внутри блока) */
   left: 12px; /*отступ с лево на право (настраивается внутри блока) */
 }
 .bg-phone-1 {
-  background: rgba(61, 155, 233, 0.3);
+  background: rgba(61, 155, 233, 0.3); /*прозрачность цвета*/
 }
 .phone-vector {
   width: 40%;  /*изменяет ширину блока(дочерний блок)*/
